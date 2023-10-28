@@ -109,6 +109,33 @@
 
     .chat-log {
       flex-grow: 1;
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .chat-window {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 100%;
+      margin: 2%;
+    }
+
+    .chat-log {
+      flex-grow: 1;
       overflow-y: scroll;
       background-color: #fff;
       border-radius: 5px;
@@ -170,6 +197,38 @@
 
     .highlight {
       color: red;
+    }
+
+    @media (max-width: 768px) {
+      .input-container {
+        margin: 1%;
+      }
+
+      .chat-window {
+        margin: 2%;
+      }
+
+      .chat-log {
+        padding: 1em;
+        margin-bottom: 1%;
+      }
+
+      .message {
+        margin-bottom: 0.5em;
+        margin-left: 1%;
+      }
+
+      .message-content {
+        padding: 0.5em;
+      }
+
+      .input-container input[type="text"] {
+        padding: 0.5em;
+      }
+
+      .input-container button {
+        padding: 0.5em;
+        margin-left: 1%;
       }
     }
   </style>
